@@ -1,18 +1,17 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import magritte from '../../images/magritte-96.png';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
     const [isActive, setisActive] = React.useState(false)
 
     return (
-        <div className="hero-head">
+        <div className="hero-head" id="gradient">
             <nav className="navbar">
                 <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item">
-                        Kuri
+                    <a className="navbar-item" id="title-name">
+                        KURI
                     </a>
                     <a
                         onClick={() => {
@@ -31,15 +30,17 @@ function Header() {
                 </div>
                 <div id="navbarMenuHeroA" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">
-                        <a className="navbar-item is-active">
-                            Home
+                        {/* <a className="navbar-item">
+                            ♡
                         </a>
                         <a className="navbar-item">
                             Portfolio
-                        </a>
+                        </a> */}
                         {/* <a className="navbar-item">
                             Blog
                         </a> */}
+                        <Link className="navbar-item has-text-weight-semibold" to='/'>♡</Link>
+                        {/* <Link className="navbar-item has-text-weight-semibold" to='/profile'>Portfolio</Link> */}
                     </div>
                 </div>
                 </div>

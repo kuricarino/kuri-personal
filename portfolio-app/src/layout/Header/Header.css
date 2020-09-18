@@ -1,0 +1,15 @@
+#gradient {
+    background: rgb(242,99,183);
+    background: linear-gradient(180deg, rgba(242,99,183,1) 0%, rgba(255,185,226,1) 100%);
+}
+
+/* #title-name {
+    font-family: 'Monoton-Regular', cursive;
+} */
+
+.navbar-item:hover {
+    background-color: rgba(255,185,226, 0.5) !important;
+    /* background: linear-gradient(180deg, rgba(242,99,183,1) 0%, rgba(255,185,226,1) 100%); */
+    border-top-right-radius: 35%;
+    border-top-left-radius: 35%;
+}
